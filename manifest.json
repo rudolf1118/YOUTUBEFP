@@ -1,0 +1,36 @@
+{
+  "name": "Fair Promote",
+  "description": "YOUTUBE",
+  "version": "1.0.1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "script.js"
+      ],
+      "css": [
+        "style.css"
+      ]
+    }
+  ],
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs",
+    "storage",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback",
+    "background",
+    "contextMenus",
+    "history",
+    "webNavigation",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "*://www.facebook.com/*"
+  ]
+}
